@@ -429,6 +429,33 @@ img {
   font-size: 0.94rem;
 }
 
+.program-tiles {
+  align-items: start;
+}
+
+.course-card h4 {
+  margin: 18px 0 8px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.course-list {
+  margin: 8px 0 14px;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.course-list ul {
+  margin-top: 6px;
+  padding-left: 18px;
+}
+
+.college-list li {
+  margin-bottom: 7px;
+}
+
 .text-link {
   color: var(--teal);
   font-weight: 800;
