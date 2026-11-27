@@ -584,6 +584,18 @@ img {
   color: var(--muted);
 }
 
+.event-with-photo {
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+}
+
+.event-photo {
+  width: 220px;
+  height: 150px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
 /* Profiles and fees */
 .profile {
   background: #fff;
@@ -828,5 +840,14 @@ img {
 
   .event {
     grid-template-columns: 75px 1fr;
+  }
+
+  .event-with-photo {
+    grid-template-columns: 1fr;
+  }
+
+  .event-photo {
+    width: 100%;
+    height: 220px;
   }
 }
