@@ -88,8 +88,8 @@ img {
 }
 
 .logo-image {
-  width: 48px;
-  height: 48px;
+  width: 58px;
+  height: 58px;
   object-fit: contain;
 }
 
@@ -799,6 +799,11 @@ img {
 }
 
 @media (max-width: 680px) {
+  .logo-image {
+    width: 48px;
+    height: 48px;
+  }
+
   .menu {
     display: block;
   }
