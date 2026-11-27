@@ -666,12 +666,59 @@ img {
 
 .contact-box {
   margin-bottom: 13px;
-  background: var(--cream);
-  padding: 22px;
+  min-height: 98px;
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  align-items: center;
+  column-gap: 16px;
+  background: #202b42;
+  color: #fff;
+  border-radius: 6px;
+  padding: 16px 22px;
+  position: relative;
 }
 
 .contact-box b {
   display: block;
+  grid-column: 2;
+  align-self: end;
+  color: #9ba4b8;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.contact-box b::first-line {
+  color: #9ba4b8;
+}
+
+.contact-box span {
+  grid-column: 2;
+  align-self: start;
+  margin-top: 4px;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
+.contact-box::before {
+  content: attr(data-icon);
+  grid-row: 1 / span 2;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  background: #182132;
+  border: 1px solid #37445d;
+  border-radius: 50%;
+  color: #f2bd4a;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.25rem;
+}
+
+.contact-details {
+  max-width: 520px;
 }
 
 /* Footer */
